@@ -9,7 +9,6 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 - [My Process](#my-process)
   - [Built With](#built-with)
   - [What I Learned](#what-i-learned)
-  - [Continued Development](#continued-development)
 - [Author](#author)
 
 ### Screenshot
@@ -20,7 +19,7 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/roopxx/frontend-mentor-challenges/tree/main/qr-code-component-main)
+- Live Site URL: [QR Code Component](https://github.com/roopxx/frontend-mentor-challenges/tree/main/qr-code-component-main)
 
 ## My Process
 
