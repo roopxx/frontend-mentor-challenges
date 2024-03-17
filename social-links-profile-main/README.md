@@ -19,7 +19,7 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ### Links
 
-- Live Site URL: [Social links profile](https://frontend-mentor-challenges-x2yy.vercel.app/)
+- Live Site URL: [Social links profile](https://social-links-profile-main-sooty.vercel.app/)
 
 ## My Process
 

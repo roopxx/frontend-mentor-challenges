@@ -19,7 +19,7 @@ This is my solution to the [QR code component challenge on Frontend Mentor](http
 
 ### Links
 
-- Live Site URL: [QR Code Component](https://github.com/roopxx/frontend-mentor-challenges/tree/main/qr-code-component-main)
+- Live Site URL: [QR Code Component](https://qr-code-component-main-seven-coral.vercel.app/)
 
 ## My Process
 

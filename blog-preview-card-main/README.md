@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Blog preview card](https://frontend-mentor-challenges-b7ow.vercel.app/)
+- Live Site URL: [Blog preview card](https://blog-preview-card-main-blush-three.vercel.app/)
 
 ## My process
 
