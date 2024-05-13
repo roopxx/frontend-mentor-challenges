@@ -1,0 +1,146 @@
+:root {
+  --orange: hsl(25, 97%, 53%);
+  --white: hsl(0, 0%, 100%);
+  --light-grey: hsl(217, 12%, 63%);
+  --medium-grey: hsl(216, 12%, 54%);
+  --dark-blue: hsl(213, 19%, 18%);
+  --very-dark-blue: hsl(216, 12%, 8%);
+  --highlight-black: hsl(210, 19%, 24%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Overpass", sans-serif;
+  font-weight: 400;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: var(--light-grey);
+}
+
+.attribution a {
+  color: var(--orange);
+}
+
+body {
+  background-color: var(--very-dark-blue);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: var(--dark-blue);
+  max-height: 360px;
+  max-width: 360px;
+  padding: 30px;
+  border-radius: 25px;
+  margin: 0 20px;
+}
+
+.star {
+  background-color: var(--highlight-black);
+  border-radius: 50%;
+  padding: 10px;
+}
+
+h2 {
+  color: var(--white);
+  margin: 22px 0 10px;
+  font-weight: 700;
+}
+
+p {
+  color: var(--light-grey);
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.rating-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.rating-score {
+  background-color: var(--highlight-black);
+  color: var(--white);
+  border-radius: 50%;
+  padding: 15px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.hover:hover {
+  background-color: var(--orange);
+}
+
+.submit {
+  background-color: var(--orange);
+  color: var(--white);
+  margin: 25px 0 0 0;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+}
+
+.submit:hover {
+  background-color: var(--white);
+  color: var(--orange);
+}
+
+.thankyou-view {
+  display: flex;
+  flex-direction: column;
+}
+
+.rating-image {
+  width: 170px;
+  height: 100px;
+  margin: 8px auto 0;
+}
+
+.rating-output {
+  background-color: var(--highlight-black);
+  margin: 30px auto 10px;
+  padding: 5px 15px;
+  border-radius: 50px;
+  color: var(--orange);
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.thankyou {
+  color: var(--white);
+  margin: 25px auto 15px;
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.thankyou-note {
+  color: var(--light-grey);
+  text-align: center;
+  font-size: 13.5px;
+}
+
+.active {
+  background-color: var(--medium-grey);
+}
+
+.hidden {
+  display: none;
+}
