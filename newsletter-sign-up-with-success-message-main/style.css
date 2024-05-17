@@ -1,0 +1,298 @@
+:root {
+  --tomato: hsl(4, 100%, 67%);
+  --dark-slate-grey: hsl(234, 29%, 20%);
+  --charcoal-grey: hsl(235, 18%, 26%);
+  --grey: hsl(231, 7%, 60%);
+  --white: hsl(0, 0%, 100%);
+}
+
+@import url("https://fonts.google.com/specimen/Roboto");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.attribution {
+  position: absolute;
+  bottom: 0;
+  font-size: 16px;
+  text-align: center;
+  color: var(--white);
+  margin-bottom: 20px;
+}
+
+.attribution a {
+  color: var(--tomato);
+}
+
+body {
+  background-color: var(--dark-slate-grey);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal {
+  background-color: var(--white);
+  border-radius: 20px;
+}
+
+.sign-up {
+  padding: 15px 15px 15px 40px;
+  display: flex;
+  width: 600px;
+}
+
+.sign-up_content {
+  padding-right: 45px;
+}
+
+.sign-up_img {
+  width: 50%;
+}
+
+.sign-up_img img {
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+}
+
+.mobile {
+  display: none;
+}
+
+h1 {
+  color: var(--dark-slate-grey);
+  padding: 30px 0 15px;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+h3 {
+  font-weight: 400;
+  font-size: 11px;
+  color: var(--dark-slate-grey);
+}
+
+ul {
+  padding: 10px 0;
+}
+
+li {
+  font-size: 12px;
+  padding: 2px 0;
+  list-style: none;
+}
+
+li::before {
+  margin: 0 12px 0 0;
+  content: "";
+  display: inline-block;
+  background-image: url("./assets/images/icon-list.svg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 14px;
+  width: 14px;
+  transform: translateY(3px);
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  margin: 15px 0;
+}
+
+.label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.sign-up p {
+  color: var(--tomato);
+  font-size: 10px;
+  font-weight: 700;
+}
+
+label {
+  font-size: 12px;
+  color: var(--charcoal-grey);
+  font-weight: 700;
+}
+
+input {
+  padding: 10px 15px;
+  border: 1px solid var(--grey);
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+input:focus {
+  outline: 1px solid var(--grey);
+}
+
+input:invalid {
+  outline: 1px solid var(--tomato);
+  color: var(--tomato);
+  background-color: rgb(251, 234, 232);
+}
+
+button {
+  background-color: var(--dark-slate-grey);
+  color: var(--white);
+  border: none;
+  border-radius: 5px;
+  padding: 12px 20px;
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:hover {
+  background-image: linear-gradient(to right, rgb(241, 24, 89), var(--tomato));
+  box-shadow: 0px 10px 35px 0px var(--tomato);
+}
+
+.success-message {
+  padding: 30px 40px;
+  width: 370px;
+  display: flex;
+  flex-direction: column;
+}
+
+.success-message img {
+  width: 20%;
+  height: 20%;
+  margin: 0 0 5px;
+}
+
+.success-message h1 {
+  color: var(--dark-slate-grey);
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.success-message p {
+  font-size: 14px;
+  color: var(--dark-slate-grey);
+  margin: 5px 0 20px;
+}
+
+.success-message span {
+  font-weight: 700;
+  color: var(--dark-slate-grey);
+}
+
+.success-message button {
+  padding: 15px 20px;
+  margin: 15px 0 10px;
+}
+
+.hide {
+  display: none;
+}
+
+@media (max-width: 425px) {
+  .sign-up {
+    flex-direction: column;
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+  }
+
+  .sign-up_content {
+    order: 2;
+    padding: 0 30px;
+  }
+
+  .sign-up_img {
+    width: 100%;
+    order: 1;
+  }
+
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  h1 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 16px;
+  }
+
+  ul {
+    padding: 12px 0 0;
+  }
+
+  li {
+    display: flex;
+    font-size: 15px;
+    padding: 10px 0;
+  }
+
+  li::before {
+    margin: 0 15px 0 0;
+    width: 23px;
+    height: 23px;
+    transform: translateY(-3px);
+  }
+
+  .email-form {
+    margin: 10px 0;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 15px 20px;
+  }
+
+  label {
+    font-size: 13px;
+    margin-top: 10px;
+  }
+
+  input {
+    padding: 15px 20px;
+    margin-bottom: 20px;
+  }
+
+  .success-message {
+    padding: 100px 30px;
+    width: 100vw;
+    height: 100vh;
+  }
+
+  .success-message h1 {
+    font-size: 42px;
+  }
+
+  .success-message p {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+
+  .success-message button {
+    margin: auto 0 0;
+    font-size: 16px;
+    padding: 20px 10px;
+  }
+
+  .attribution {
+    font-size: 16px;
+    color: var(--dark-slate-grey);
+    margin: 0 8px 10px;
+  }
+}
