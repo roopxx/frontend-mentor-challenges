@@ -160,6 +160,15 @@ ol li {
   font-size: 20px;
 }
 
+.attribution {
+  font-size: 20px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
 @media screen and (max-width: 375px) {
   body {
     display: block;
