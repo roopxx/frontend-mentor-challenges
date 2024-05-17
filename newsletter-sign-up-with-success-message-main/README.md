@@ -44,7 +44,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [Newsletter sign-up form with success message solution](https://your-live-site-url.com)
+- Live Site URL: [Newsletter sign-up form with success message solution](https://newsletter-sign-up-with-success-message-main-eta-one.vercel.app/)
 
 ## My process
 
