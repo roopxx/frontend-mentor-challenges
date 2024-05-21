@@ -1,0 +1,180 @@
+:root {
+  --purple: hsl(259, 100%, 65%);
+  --light-red: hsl(0, 100%, 67%);
+  --white: hsl(0, 0%, 100%);
+  --off-white: hsl(0, 0%, 94%);
+  --light-grey: hsl(0, 0%, 86%);
+  --smokey-grey: hsl(0, 1%, 44%);
+  --off-black: hsl(0, 0%, 8%);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.attribution {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  text-align: center;
+  color: var(--off-black);
+}
+
+.attribution a {
+  color: var(--purple);
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--off-white);
+  color: var(--off-black);
+  height: 100vh;
+}
+
+.age-calculator {
+  background-color: var(--white);
+  padding: 3rem;
+  border-radius: 2rem 2rem 8rem 2rem;
+}
+
+.date {
+  margin: 0 10rem 0 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.date div {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 0 0 0.3rem 0rem;
+  font-weight: 700;
+  color: var(--smokey-grey);
+  letter-spacing: 0.1rem;
+}
+
+input {
+  max-width: 9rem;
+  font-size: 2rem;
+  font-weight: 900;
+  padding: 1rem;
+  border: var(--light-grey) 0.05em solid;
+  border-radius: 0.25em;
+}
+
+input:focus {
+  outline: var(--smokey-grey) 0.05em solid;
+}
+
+hr {
+  border: 1px solid var(--light-grey);
+  margin: 2rem 0;
+}
+
+.separator {
+  display: flex;
+  align-items: center;
+}
+
+hr {
+  width: 100%;
+}
+
+img {
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+button {
+  background-color: var(--off-black);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--purple);
+}
+
+.calculated-age {
+  color: var(--off-black);
+  font-weight: 900;
+  font-style: italic;
+  font-size: 4.5rem;
+}
+
+.calculated-age div {
+  display: flex;
+  line-height: 1;
+  gap: 1rem;
+}
+
+.calculated-age div span {
+  color: var(--purple);
+}
+
+.date.error * {
+  color: var(--light-red);
+  input {
+    outline: 1px solid var(--light-red);
+    color: var(--off-black);
+  }
+  span {
+    font-size: 0.8rem;
+    margin-top: 0.25rem;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 1rem;
+  }
+
+  .age-calculator {
+    width: 100%;
+    padding: 4rem 1.5rem;
+  }
+
+  .date {
+    margin: 0;
+    gap: 1rem;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1.5rem;
+  }
+
+  .separator {
+    margin: 2.5rem 0;
+  }
+
+  button {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  img {
+    width: 4rem;
+    height: 4rem;
+    margin: 0.5rem;
+  }
+
+  .calculated-age {
+    font-size: 2.5rem;
+  }
+
+  .calculated-age div {
+    line-height: 1.3;
+  }
+}
